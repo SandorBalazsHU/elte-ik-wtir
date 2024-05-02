@@ -1,0 +1,61 @@
+Szia! Az állapotfüggő és az állapotfüggetlen kommunikáció két különböző módszer a számítógépes rendszerekben és hálózatokban történő adatok továbbítására. Itt van egy összefoglaló a két típusról:
+
+Állapotfüggetlen kommunikáció:
+Az állapotfüggetlen kommunikáció során minden egyes kérés (request) önállóan áll, nem függ a korábbi vagy későbbi kérésektől.
+Az adatokat egy kérés során továbbítják, majd a kapcsolat bezárul, így a szerver nem tárol semmilyen információt a kliensről.
+Példák erre a típusra az HTTP GET kérések, amikor egy weboldalt töltünk be vagy egy képet töltünk le.
+Előnyök:
+
+Egyszerű megvalósítás és használat.
+Kisebb terhelést jelent a szerverekre, mivel nincs szükség az állapot tárolására.
+Hátrányok:
+
+Nem alkalmas olyan alkalmazásokhoz, ahol az előző kérések függnek a jelenlegi kéréstől.
+Korlátozott funkcionalitás, mivel minden kérés különálló.
+Állapotfüggő kommunikáció:
+Az állapotfüggő kommunikáció során a kérések függenek egymástól; az egyik kérés válasza befolyásolhatja a következő kérést.
+Az állapot (state) tárolására szükség van a szerveren vagy a kliens oldalon (vagy mindkettőn), hogy nyomon követhessék a korábbi kéréseket.
+Példák erre a típusra az állapotfüggő protokollok, például a HTTP POST, ahol például bejelentkezünk egy weboldalra, majd a szerver tárolja a bejelentkezési állapotunkat.
+Előnyök:
+
+Rugalmasság: Az előző kérések eredményei alapján lehetőség van dinamikusan változtatni a későbbi kéréseket.
+Teljes funkcionalitás: Képes kezelni olyan alkalmazásokat, ahol a kérések egymástól függenek.
+Hátrányok:
+
+Bonyolultabb megvalósítás és karbantartás.
+Nagyobb terhelés lehet a szerverekre, mivel szükség van az állapot tárolására és kezelésére.
+Minden típusnak megvan a helye és alkalmazása a megfelelő helyzetben, és a választás az adott alkalmazás követelményeitől és céljaitól függ.
+
+
+
+
+
+
+
+Szia!
+
+A REST (Representational State Transfer) egy stílus vagy architektúrális minta, amelyet a webes alkalmazások közötti kommunikáció egyszerűsítésére és hatékonyabbá tételére használnak. A REST API (Application Programming Interface) pedig az alkalmazások közötti kommunikációhoz használt interfész, amely a REST stílust követi.
+
+A REST módszer alapelvei:
+
+Állapotmentesség (Statelessness): A kliens kérése tartalmazza az összes szükséges információt az adatszervernek a válasz megértéséhez. A szerver nem tárolja a kliens állapotát a kérések között.
+Erőforrások reprezentációja: Az adatoknak és funkcióknak erőforrásokat kell reprezentálniuk, amelyek egyedi URI-címekkel azonosíthatók. Például egy webes alkalmazásban az egyes felhasználók, cikkek vagy képek lehetnek erőforrások.
+Egységes interfész: A REST API-knak egy egységes interfészt kell használniuk az erőforrások kezelésére, például HTTP módszerekkel (GET, POST, PUT, DELETE stb.).
+Láthatóság (Visibility): A klienseknek könnyen megérthetőknek és kiterjeszthetőknek kell lenniük a REST API-k.
+Az interakció kliens-szerver: A kliensek és a szerverek közötti interakció történhet például JSON vagy XML formátumban, általában az interneten keresztül HTTP protokollon keresztül.
+A REST API-k számos területen használhatók:
+
+Webes alkalmazások: A REST API-kat gyakran használják webes alkalmazások közötti kommunikációhoz, például a front-end és a back-end között.
+Mobilalkalmazások: Mobilalkalmazások gyakran használnak REST API-kat a szerverrel való kommunikációhoz, például felhasználói adatok letöltéséhez vagy feltöltéséhez.
+IoT (Internet of Things): Az IoT eszközök REST API-k segítségével kommunikálhatnak a felhőalapú szolgáltatásokkal vagy más eszközökkel.
+Felhőszolgáltatások: A felhőalapú szolgáltatások általában REST API-kat kínálnak a fejlesztők számára, hogy lehetővé tegyék az alkalmazások számára az adatokhoz való hozzáférést és azok manipulálását.
+Mikroszolgáltatások: A REST API-kat gyakran alkalmazzák mikroszolgáltatások létrehozásához és kommunikációjához, amelyek különböző funkciókat kínálnak és egymással kommunikálnak.
+A REST módszer és a REST API-k használata lehetővé teszi a különböző rendszerek közötti könnyű és hatékony kommunikációt, valamint a skálázhatóságot és a rugalmasságot az alkalmazások fejlesztése során.
+
+
+
+
+
+Message ChatGPT…
+
+ChatGPT can make mistakes. Consider checking imp
